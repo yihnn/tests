@@ -1,0 +1,86 @@
+<%@ page contentType="text/html; charset=UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%
+	request.setCharacterEncoding("UTF-8");
+	String cp = request.getContextPath();
+%>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>PostsPot - 회원가입</title>
+
+<link rel="stylesheet" type="text/css" href="/postspot/resources/css/account.css"/>
+
+<script type="text/javascript">
+	
+	function sendIt() {
+		
+		var f = document.myForm();
+		
+		str = f.id.value;
+		str = str.trim();
+		if(!str){
+			alert
+		}
+		
+	}
+
+</script>
+
+</head>
+<body>
+
+<div class=container>
+
+	<div>
+		<img alt="PostsPot" src="/postspot/resources/image/Postspot_logo1.png" onclick="javascript:location.href='<%=cp%>/mainHome'"/>
+	</div>
+	<div id="header_title">
+		회원가입
+	</div>
+	
+	
+	<!-- ------------------------------------------------------------------------------------------ -->
+	
+<form action="" name="myForm">
+	
+	<div id="create_area" >
+		<div id="information_inputArea">
+			<p>아이디</p>
+			<input id="information_inputbox" type="text" name="id">
+		</div>
+		<div id="information_inputArea">
+			<p>비밀번호</p>
+			<input id="information_inputbox" type="password" name="pwd">
+		</div>
+		<div id="information_inputArea">
+			<p>비밀번호 확인</p>
+			<input id="information_inputbox" type="password" name="pwd">
+		</div>
+		<div id="information_inputArea">
+			<p>이름</p>
+			<input id="information_inputbox" type="text" name="name">
+		</div>
+				<div id="information_inputArea">
+			<p>연락처</p>
+			<input id="information_inputbox" type="text" name="tel">
+		</div>
+		
+		<div id="create_btnArea">
+		<button id="createAccount_btn" type="button" onclick="sendIt();">가입하기</button>
+		</div>
+	</div>
+	
+</form>
+
+
+
+
+
+</div>
+
+</body>
+</html>

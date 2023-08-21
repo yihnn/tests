@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="PostsPot"/>
+<aop-project name="SpringDI"/>
+<aop-project name="SpringMyBatis"/>
+<aop-project name="SpringMVC1"/>
+<aop-project name="SpringWebMybatis"/>
+<aop-project name="SpringOAuth2"/>
+<aop-project name="Newzips"/>
+<aop-project name="SpringAOP"/>
+<aop-project name="SpringBootBoardJSP"/>
+<aop-project name="SpringWeb"/>
+<aop-project name="SpringJdbcTemplate"/>
+<aop-project name="SpringWebView"/>
+<aop-project name="SpringBootBoard"/>
+<aop-project name="SpringDI2"/>
+</aop-reference-model>

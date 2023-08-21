@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      border: 0px solid silver;
+      
+      /* 
+	  position: fixed;
+	  z-index: 1; 
+	  */
+    }
+
+   body {
+      font-family: 'Roboto', sans-serif;
+      font-size: 0.9rem;
+      /* color: #999; */
+      line-height: 1rem;
+      letter-spacing: 0.1px;
+    }
+
+
+    h1,
+    h2,
+    h3 {
+    font-family: 'Noto Sans KR', sans-serif;
+      color: #444;
+    }
+
+    p{
+    font-family: 'Nanum Gothic', sans-serif;
+    }
+
+    h1 {
+      font-size: 4rem;
+      line-height: 4rem;
+      text-transform: uppercase;
+      color: #fff;
+    }
+
+    h2 {
+      font-size: 2.4rem;
+      line-height: 2.4rem;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      font-size: 1.4rem;
+      line-height: 1.4rem;
+    }
+
+    a:link {
+      color: #666;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: #666;
+    }
+
+    a:hover {
+      color: #6c500d;
+      /* color: #3967ED; */
+    }
+
+    a:active {
+      color:#6c500d;
+    /* #3967ED; */
+    }
+  
+  	main button {
+       font-size: 0.7rem;
+       text-transform: uppercase;
+       padding: 10px 30px;
+       border: 1px solid #ccc;
+       background: white;
+       transition: 1s;
+       margin-top: 1rem;
+       border-radius: 50px;
+     }
+
+    main button:hover {
+       background: ;
+       box-shadow: 200px 0 0 0 rgba(57,103,237,1) inset;
+       color: white;
+       cursor: pointer;
+
+     }
+     
+
+
+    /* start */
+
+
+/* header img {
+  width: 100px;
+  margin: 14px 0 7px 0;
+}
+ */
+    ul,
+    ol,
+    li {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    ul.myMenu>li {
+      display: inline-block;
+      width: 100px;
+      padding: 1.66rem 10px;
+      background: #fff;
+      border: 0px solid #eee;
+      text-align: center;
+      position: relative;
+      top: 0rem;
+      float: right;
+      z-index: 1
+
+    }
+
+    ul.myMenu>li:hover {
+      background: #6c500d;
+      color:#fff;
+    }
+
+    ul.myMenu>li ul.submenu {
+      display: none;
+      position: absolute;
+      top: 69px;
+      left: 0;
+    }
+
+    ul.myMenu>li:hover ul.submenu {
+      display: block;
+      z-index: 200;
+    }
+
+    ul.myMenu>li ul.submenu>li {
+      display: inline-block;
+      width: 100px;
+      padding: 1.66rem 10px;
+      color: #888;
+      background: #eee;
+      border-bottom: 1px solid #6c500d;
+      text-align: center;
+        transition:0.7s;
+    }
+
+    ul.myMenu>li ul.submenu>li:hover {
+      background: #6c500d;
+      color: #fff;
+    }
+
+    main {
+      height: 700px;
+      background: url('https://cdn.shopify.com/s/files/1/0070/7032/files/Author-preneurs_resized_Getty_1341415617.jpg?v=1642714705&width=1024') no-repeat;
+     /*  background: url('https://www.themanual.com/wp-content/uploads/sites/9/2021/05/best-history-books-to-read-2021.jpg?p=1') no-repeat; */
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      
+    }
+
+
+    main>div {
+      width: 600px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      line-height: 1.5rem;
+      color: #fff;
+    }
+
+main span {
+  font-size: 5rem;
+  color: #fff;
+  line-height: 2;
+}
+
+
+main button:hover {
+       background: ;
+       box-shadow: 200px 0 0 0 rgba(57,103,237,1) inset;
+       color: white;
+       cursor: pointer;
+     }
+
+main button {
+  margin-top: 1.3rem;
+}
+    .imgs section {
+      padding: 70px 0;
+      width: 1000px;
+      margin: 0 auto;
+    }
+
+    .imgs section>:first-child img {
+      width: 500px;
+      float: left;
+    }
+
+    .imgs section>:nth-child(2) img {
+      float: right;
+      display: flex;
+      width: 234px;
+      margin-left: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .imgs section>:last-child img {
+      width: 484px;
+      /* height: 215px; */
+      margin-left: 1rem;
+    }
+
+
+
+    .slider {
+      clear: both;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    .swiper-container {
+      width: 1000px;
+      height: 380px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      display: flex;
+      /* ������ �߾����� �ϱ����� flex ��� */
+      align-items: center;
+      /* ���Ʒ� ���� �߾����� */
+      justify-content: center;
+      /* �¿� ���� �߾����� */
+    }
+
+    .swiper-slide img {
+      width: 100%;
+    }
+
+
+
+    .video>:first-child {
+      float: left;
+      width: 50%;
+    }
+
+
+
+    .video>.bg {
+      position: relative;
+      width: 50%;
+      float: right;
+      padding: 5rem;
+      height: 500px;
+
+    }
+
+    .bg::after {
+      width: 100%;
+      height: 100%;
+      content: "";
+      background: url('https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80')no-repeat;
+      background-position: bottom;
+      position: absolute;
+      top: 0;
+      left: 0;
+      filter: opacity(0.3);
+      z-index: -1;
+    }
+
+
+
+    .video p {
+      line-height: 1.2rem;
+    }
+
+    .video span {
+      font-weight: bold;
+    }
+
+    .video h2 {
+      line-height: 3rem;
+      margin-bottom: 1.8rem;
+    }
+    
+    .video button {
+      margin-top: 2rem;      
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      padding: 10px 30px;
+      border: 1px solid #ccc;
+      background: white;
+      transition: 1s;
+      margin-top: 1rem;
+      border-radius: 50px;
+     }
+
+    .video button:hover {
+       background: ;
+       box-shadow: 200px 0 0 0 rgba(57,103,237,1) inset;
+       color: white;
+       cursor: pointer;
+     }
+
+
+    .big {
+      clear: both;
+      width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 70px 0;
+      color: #999;
+    }
+
+    .big h2{
+      margin-bottom: 1.5rem;
+    }
+
+    .big>div {
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+    }
+
+    .big section {
+      width: 170px;
+      margin-top: 2rem;
+    }
+
+    .big img {
+      width: 100%;
+      height: 250px;
+    }
+
+.big p {
+  margin-top: 0.8rem;
+}
+
+    .big button {
+      margin-bottom: 2.5rem;
+    }
+
+    .image-container {
+      position: relative;
+      width: 100%;
+    }
+
+    .object {
+      width: 50px;
+      height: 50px;
+      color: white;
+      border-radius: 50%;
+      line-height: 3.2rem;
+      background: #6c500d;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -550%);
+
+    }
+
+    .after>img {
+      padding: 10px;
+      width: 60px;
+      height: 60px;
+      margin: 57% 0;
+      transition: 0.7s;
+
+    }
+
+    .after>img:hover {
+      transform: scale(1.1);
+
+    }
+
+    .image-container .after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      filter: opacity(0);
+      color: #FFF;
+      transition: 1s;
+
+    }
+
+    .image-container:hover .after {
+      display: block;
+      filter: opacity(1);
+      background: rgba(0, 0, 0, 0.7);
+      cursor: pointer;
+
+    }
+
+
+    .products {
+      background: #eee;
+      padding: 70px 0;
+      clear: both;
+      text-align: center;
+    }
+
+    .products> :nth-child(1) {
+      width: 1000px;
+      margin: 0 auto;
+    }
+
+
+    .products> :nth-child(2) {
+      width: 1000px;
+      margin: 0 auto;
+      clear: both;
+      display: flex;
+      justify-content: space-around;
+      margin-top: 60px;
+    }
+
+    .products section {
+      width: 220px;
+      text-align: center;
+      position: relative;
+    }
+
+    .products section div {
+      background: #6c500d;
+      width: 220px;
+      height: 30px;
+      color: white;
+      line-height: 1.9rem;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 900%);
+      transition: 0.8s;
+      cursor: pointer;
+      display: block;
+    }
+
+    .products section:nth-child(2) div {
+      display: none;
+    }
+
+    .products img {
+      width: 220px;
+      height: 300px;
+      margin-bottom: 16px;
+      transition: 0.8s;
+      cursor: pointer;
+    }
+
+    .products img:hover {
+      border: 8px solid #6c500d;
+    }
+
+
+
+    .form {
+      padding: 5rem 0;
+      background: #6c500d;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .form h2 {
+      margin-bottom: 1.7rem;
+    }
+
+    .form input {
+      width: 300px;
+      height: 2.3rem;
+      padding: 1rem;
+      border: 1px solid #eee;
+      margin-right: 5px;
+    }
+
+    .form button {
+
+      border: 1px solid #eee;
+
+    }
+
+    footer {
+      padding: 3rem 0;
+      margin: 0 auto;
+      text-align: center;
+      color: #999;
+    }
+
+    footer div {
+      width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+
+    footer ul {
+      width: 800px;
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+
+    footer p {
+
+      width: 800px;
+      line-height: 1.2rem;
+        margin: 0 auto;
+    }
+
+
+.btn-555 {
+  width: 120px;
+  height: 50px;
+  font-family: 'Noto Sans Kr', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  background: transparent;
+  border-radius: 4px;
+  transition: 0.3s;
+  outline: none;
+  cursor: pointer;
+	
+  background: #555;
+  color: #fff;
+}
+
+.btn-555:hover {
+  background: #000;
+}
+
+
